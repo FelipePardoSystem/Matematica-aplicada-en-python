@@ -1,0 +1,55 @@
+
+Considere la sucesión  (3n2+7) . Por medio de un código Python con ciclos for despliegue en pantalla
+
+a) Los primeros 5 términos.
+
+b) Los 5 términos que vienen inmediatamente después del décimoquinto témino.
+RESPUESTAS:
+
+# a)
+a = []
+for i in range(5):
+  n = i + 16
+  a.append(3*n**2+7)
+  print(f"a({n})={a[i]}")
+  
+# b)
+b = []
+for i in range(4):
+  n = i + 16
+  b.append(3*n**2+7)
+  print(f"b({n})={b[i]}")
+  
+  
+  Considere la sucesión (gn) cuyo término general es  5n3 . Implemente un código Python que muestre en pantalla
+
+a) Los primeros 4 términos.
+
+b) Los 4 términos que vienen inmediatamente después del octavo término.
+
+c) ¿El término 40.000 pertenece a la sucesión? Verificarlo resolviendo una ecuación en Python y usando bucles. ¿Cuál es más rápido?
+
+# a) 
+a=[]
+for i in range(4):
+  n= i + 1
+  a.append(5*n**3)
+  print(f"a({n})={a[i]}")
+  
+# b) 
+a=[]
+for i in range(4):
+  n= i + 9
+  a.append(5*n**3)
+  print(f"a({n})={a[i]}")
+  
+
+# c) 
+a=[]
+for i in range(4):
+  n= i + 20
+  a.append(5*n**3)
+  print(f"a({n})={a[i]}")
+ 
+  
+  
