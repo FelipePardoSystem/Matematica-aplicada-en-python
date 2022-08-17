@@ -52,4 +52,10 @@ for i in range(4):
   print(f"a({n})={a[i]}")
  
   
-  
+  FORMULA PARA LOGARITMOS
+  #e)
+import math
+r= RAZON
+n=math.log(an/a1,r) + 1
+
+print(n)
