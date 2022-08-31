@@ -1,0 +1,81 @@
+
+Un nuevo canal de YouTube registra 50 visitas la primera semana de funcionamiento, registra 66 visitas la segunda, 82 la tercera y así sucesivamente. Representando por  vi  la cantidad de visitas en la semana  i .
+
+a) Escriba la expresión algebraica para el término  vi .
+
+b) Escriba la expresión algebraica para el número total de visitas durante las n primeras semanas.
+
+c) Determine  ∑40i=1vi  mediante la expresión anterior e interprételo.
+
+d) Determine  ∑320i=120vi  usando bucles en interprételo.
+
+e) Determine usando código el valor de n para el que  ∑ni=1vi=2.430 
+
+f) Usando bucles, determine la cantidad de visitas registradas desde la semana 41 a la semana 190. Presente este resultado en notación de sumatoria.
+
+a1 = 50
+a2 = 66
+a3 = 82
+
+d1 = a3 - a2
+d2 = a2 - a1
+print(d1,d2)
+
+d = 16
+
+# an = 50 + (n-1)*16
+
+# sucesión aritmética
+
+n = 40
+a1 = 50
+d = 16
+
+Sn = n/2*(2*a1 + (n-1)*d)
+print(Sn)
+
+a = []
+suma = 0
+for i in range(40):
+  n = i + 1
+  a.append(50 + (n-1)*16)
+  suma = a[i] + suma
+print(f"Sumatoria = {suma}")
+
+n = 320
+a1 = 50
+d = 16
+
+Sn320 = n/2*(2*a1 + (n-1)*d)
+
+n = 119
+a1 = 50
+d = 16
+
+Sn119 = n/2*(2*a1 + (n-1)*d)
+
+Total = Sn320 - Sn119
+print(Total)
+
+
+a = []
+suma1 = 0
+for i in range(320):
+  n = i + 1
+  a.append(50 + (n-1)*16)
+  suma1 = a[i] + suma1
+  print(f"a({n}) = {a[i]}")
+print(f"Sumatoria = {suma1}")
+
+
+a = []
+suma2 = 0
+for i in range(119):
+  n = i + 1
+  a.append(50 + (n-1)*16)
+  suma2 = a[i] + suma2
+print(f"Sumatoria = {suma2}")
+
+
+Total2 = suma1 - suma2
+print(Total2)
