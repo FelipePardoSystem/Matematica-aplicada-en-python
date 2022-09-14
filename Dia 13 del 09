@@ -1,0 +1,35 @@
+
+GUIA RESUMEN PRUEBA 1
+Pregunta 1
+La población de un ciudad, actualmente de 5.000.000 habitantes, crece a una tasa anual del 2,3%. Definimos  hi  como la cantidad de habitantes de esta ciudad estimada para dentro de  i  años.
+
+a) Indique el tipo de sucesión al cual corresponde este caso. Justifique su respuesta.
+
+b) Escriba una expresión, que dependa del lugar del término, para la sucesión  hi .
+
+c) ¿Cuántos habitantes se estima que habrá dentro de 12 años?
+
+d) ¿Cuántos años deben transcurrir para que la población estimada sea 7.879.210 habitantes?
+
+
+#a) Es una sucecion geometrica dado a que cada vez que se aplique el aumento , el resultado variará , ya que es un crecimiento exponencial.
+
+a1=5115000
+an=a1*1.023**(n-1)
+a1=5115000
+an=a1*1.023**(12-1)
+print(an)
+
+r=1.023
+import math
+a1=5115000
+an=7879210
+n2= math.log(an/a1, r)+1 # PARA CALCULAR CON LOGARITMO
+print(n2)
+
+a = []
+for i in range(12):
+  n = i + 1
+  a.append(5115000*1.023**n-1)
+  print(f"a({n})={a[i]}")
+  
